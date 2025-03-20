@@ -1,0 +1,141 @@
+.section-rent {
+  background-color: #0e1823;
+}
+.rent-text-container {
+  max-width: 335px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .rent-text-container {
+    max-width: 472px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.rent-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  padding-top: 80px;
+  margin-bottom: 40px;
+  justify-content: left;
+}
+
+@media screen and (min-width: 768px) {
+  .rent-title {
+    font-size: 48px;
+  }
+}
+
+.rent-form {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.rent-form-input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #fbfbfb;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  padding-left: 18px;
+  width: 100%;
+  height: 42px;
+  margin-bottom: 18px;
+  background-color: transparent;
+}
+
+.rent-form-textarea {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #fbfbfb;
+  border: 1px solid rgba(251, 251, 251, 0.2);
+  border-radius: 12px;
+  padding-left: 18px;
+  padding-top: 14px;
+  width: 100%;
+  min-height: 108px;
+  margin-bottom: 40px;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .rent-form-textarea {
+    padding-top: 18px;
+  }
+}
+
+.rent-form-input::placeholder,
+.rent-form-textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  color: rgba(251, 251, 251, 0.4);
+}
+
+@media screen and (min-width: 768px) {
+  .rent-form-input::placeholder,
+  .rent-form-textarea::placeholder {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+
+.rent-form-input:focus,
+.rent-form-input:hover,
+.rent-form-textarea:focus,
+.rent-form-textarea:hover {
+  border: 1px solid rgba(251, 251, 251, 0.5);
+}
+
+.rent-button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  border-radius: 15px;
+  border: none;
+  padding: 14px 44px;
+  max-width: 122px;
+  height: 46px;
+  background-color: #1b414b;
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .rent-button {
+    font-size: 18px;
+    line-height: 1.1;
+    padding: 18px 75px;
+    max-width: 194px;
+    height: 56px;
+  }
+}
+
+.rent-button:hover,
+.rent-button:focus {
+  color: #1b414b;
+  background-color: #fbfbfb;
+}
+
+.rent-img {
+  border-radius: 24px;
+  width: 335px;
+  height: 412px;
+}
+
+@media screen and (min-width: 768px) {
+  .rent-img {
+    width: 704px;
+    height: 534px;
+  }
+}
