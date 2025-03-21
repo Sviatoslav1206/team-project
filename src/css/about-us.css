@@ -1,0 +1,55 @@
+.about-us {
+}
+
+.about-us-container {
+    border-radius: 24px;
+    max-width: 335px;
+    
+    background-color: #fbfbfb;
+    padding-top: 40px;
+}
+.about-us-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #1b414b;
+    max-width: 270px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.about-us-list {
+    padding-left: 20px;
+    margin-bottom: 40px;
+    
+}
+.about-us-items {
+    
+    margin-bottom: 20px;
+    max-width: 270px;
+    
+
+
+    
+}
+.about-us-first-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #1b414b;
+    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    
+}
+.about-us-second-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+    color: #040306;
+    opacity: 0.4;
+    margin-bottom: 40px;
+    
+    margin: 0 auto;
+}
