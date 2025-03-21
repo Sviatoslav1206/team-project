@@ -3,11 +3,12 @@ var btnOpenMenu = document.getElementById("open_menu");
 
 var myModalMenu = document.getElementById("modal_menu");
 
-function toggleClass(objForm) {
-	console.log(objForm);
+var bodyElement = document.body;
 
+function toggleClass(objForm) {
 	return function () {
 		objForm.classList.toggle("is-open");
+		bodyElement.classList.toggle("locked");
 
 		if (objForm.classList.contains("is-open")) {
 			myBurgerIcon.setAttribute("href", "/img/sprite.svg#icon-close-iscon");
