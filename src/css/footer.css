@@ -2,7 +2,6 @@
 /* #region footer */
 
 /* Styles for Mobile devices */
-@media screen and (min-width: 375px) {
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -114,7 +113,7 @@
   text-align: center;
   padding: 20px;
 }
-}
+
 /* Styles for Tablet devices */
 
 @media screen and (min-width: 768px) {
@@ -173,8 +172,7 @@
 /* Styles for Desktop devices */
 @media  screen and (min-width: 1280px) {
   .container {
-    min-width: 1230px;
-    margin: 0 25px;
+    max-width: 1230px;
   }
 
 
