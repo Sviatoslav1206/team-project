@@ -26,8 +26,29 @@
 
 .our-yachts-list {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
+  gap: 25px;
+}
+
+.item-benetti {
+  display: none;
+}
+
+.item-belle {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .our-yachts-list .item-benetti {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .our-yachts-list .item-belle {
+    display: block;
+  }
 }
 
 .our-yachts-item {
@@ -37,7 +58,7 @@
 
 .our-yachts-item-img {
   border-radius: 24px;
-  padding: 16px 16px 0 16px;
+  padding: 16px;
 }
 
 .our-yachts-img {
@@ -63,10 +84,6 @@
     width: 360px;
   }
 }
-.container-item-descr {
-  border-bottom: 1px solid rgba(4, 3, 6, 0.1);
-  padding-bottom: 17px;
-}
 
 .our-yachts-item-descr {
   font-family: 'Inter', sans-serif;
@@ -76,9 +93,11 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
   color: #1b414b;
-  margin: 32px 16px;
+  margin: 32px 16px 0;
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid rgba(4, 3, 6, 0.1);
+  padding-bottom: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -139,7 +158,6 @@
   font-size: 14px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #040306;
   opacity: 1;
 }
@@ -150,6 +168,12 @@
 .btn {
   display: block;
   margin: 40px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    margin: 50px auto 75px;
+  }
 }
 
 .btn-our-yachts {
@@ -169,6 +193,33 @@
   color: #fbfbfb;
 }
 
+@media screen and (min-width: 768px) {
+  .btn-our-yachts {
+    width: 179px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .btn-our-yachts:hover,
+  .btn-our-yachts:focus {
+    border-radius: 15px;
+    padding: 14px 32px;
+    width: 179px;
+    height: 52px;
+    background: #fbfbfb;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: #1b414b;
+  }
+}
+
 .btn-our-yachts:active {
   border-radius: 15px;
   padding: 14px 32px;
@@ -182,4 +233,13 @@
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: #1b414b;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-our-yachts:active {
+    width: 179px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 1.1;
+  }
 }
