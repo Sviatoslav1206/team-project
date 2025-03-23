@@ -19,4 +19,4 @@ function toggleClass(objForm) {
 	};
 }
 
-btnOpenMenu.addEventListener("click", toggleClass(myModalMenu));
+btnOpenMenu.addEventListener("click", toggleClass(myModalMenu)); 
