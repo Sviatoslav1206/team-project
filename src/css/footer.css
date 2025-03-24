@@ -1,11 +1,8 @@
 /* Styles for Mobile devices */
 
-.footer {
-    padding: 0 10px;
-}
-
 .footer-custom-container {
     min-width: 300px;
+    padding: 0 10px;
 }
 
 .footer-container {
@@ -140,12 +137,9 @@
 
 @media only screen and (min-width: 768px) {
 
-    .footer {
-        padding: 0 16px;
-    }
-
     .footer-custom-container {
         max-width: 768px;
+        padding: 0 16px;
     }
 
     .tablet-desktop {
@@ -202,12 +196,9 @@
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1280px) {
 
-    .footer {
-        padding: 0 25px;
-    }
-
     .footer-custom-container {
         max-width: 1280px;
+        padding: 0 25px;
 
     }
 
