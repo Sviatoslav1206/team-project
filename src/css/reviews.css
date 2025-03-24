@@ -57,15 +57,26 @@
     }
 }
 
-.reviews-block {}
-
 .reviews-block-list {
     display: flex;
     flex-direction: row;
     gap: 32px;
+    /* Styles for 768px */
     text-align: center;
     justify-content: center;
 
+}
+
+@media only screen and (min-width: 1280px) {
+    .reviews-block-list {
+        gap: 26px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .reviews-block-list {
+        gap: 32px;
+    }
 }
 
 .reviews-block-item {
@@ -76,11 +87,31 @@
     background-color: #fbfbfb;
 }
 
+@media only screen and (min-width: 768px) {
+    .reviews-block-item {
+        max-width: 336px;
+    }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .reviews-block-item {
+        max-width: 376px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .reviews-block-item {
+        max-width: 392px;
+    }
+}
+
+/* < !-- показывается только с 768px --> */
 .rbi2 {
     display: none;
 }
 
-
+/* < !-- показывается только с 1280px --> */
 .rbi3 {
     display: none;
 }
@@ -92,7 +123,7 @@
 }
 
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1280px) {
     .rbi3 {
         display: list-item;
     }
