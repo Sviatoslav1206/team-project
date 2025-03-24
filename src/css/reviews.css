@@ -1,0 +1,158 @@
+/* #region reviews */
+
+.reviews {}
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+    .reviews-container {
+        margin-bottom: 150px;
+    }
+}
+
+.reviews-title-container {
+    max-width: 854px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.reviews-title {
+    padding: 0;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fbfbfb;
+    margin-bottom: 25px;
+}
+
+.reviews-text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 117%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #fbfbfb;
+    margin-bottom: 40px;
+    opacity: 0.4;
+}
+
+@media only screen and (min-width: 768px) {
+    .reviews-title {
+        font-size: 48px;
+    }
+
+    .reviews-text {
+        font-size: 14px;
+        line-height: 129%;
+        margin-bottom: 75px;
+    }
+}
+
+.reviews-block-list {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    /* Styles for 768px */
+    text-align: center;
+    justify-content: center;
+
+}
+
+@media only screen and (min-width: 1280px) {
+    .reviews-block-list {
+        gap: 26px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .reviews-block-list {
+        gap: 32px;
+    }
+}
+
+.reviews-block-item {
+    border-radius: 24px;
+    padding: 32px 8px;
+    max-width: 335px;
+    height: 282px;
+    background-color: #fbfbfb;
+}
+
+@media only screen and (min-width: 768px) {
+    .reviews-block-item {
+        max-width: 336px;
+    }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .reviews-block-item {
+        max-width: 376px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .reviews-block-item {
+        max-width: 392px;
+    }
+}
+
+/* < !-- показывается только с 768px --> */
+.rbi2 {
+    display: none;
+}
+
+/* < !-- показывается только с 1280px --> */
+.rbi3 {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .rbi2 {
+        display: list-item;
+    }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+    .rbi3 {
+        display: list-item;
+    }
+}
+
+.reviews-images {
+    background-color: #fbfbfb;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 24px auto;
+}
+
+.reviews-block-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #040306;
+    margin-bottom: 8px;
+}
+
+.reviews-block-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(4, 3, 6, 0.4);
+}
+
+/* #endregion reviews */
