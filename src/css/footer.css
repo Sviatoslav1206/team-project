@@ -1,21 +1,236 @@
-.footer {
-  padding: 20px 0;
+/** #region footer */
+/* Styles for Mobile devices */
+.footer-custom-container {
+  min-width: 300px;
+  max-width: 355px;
+  min-height: 412px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
-.footer-desc {
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background-color: #1B414B;
+  border-radius: 24px 24px 0 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 37px;
+  padding: 40px 30px 20px 30px
+}
+
+.footer-menu-block {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: start;
+  row-gap: 80px;
+  margin-bottom: 40px;
+}
+
+.logo-footer {
+  width: auto;
+  height: auto;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  color: #fbfbfb;
+  cursor: pointer;
+  padding: 0;
+
+}
+
+.footer-list {
+  display: flex;
+  gap: 4px;
+}
+
+.item-list-link {
+  border-radius: 8px;
+  width: 66px;
+  height: 40px;
+  background-color: rgba(251, 251, 251, 0.3);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbfbfb;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.item-list-link:hover,
+.item-list-link:focus {
+  background-color: #FBFBFB;
+  color: #1B414B;
+}
+
+.social-links-list {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 auto;
+}
+
+.social-item {
+  width: 24px;
+  height: 24px;
+}
+
+.link-icon {
+  fill: #fbfbfb;
+  width: 19px;
+  height: 19px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-icon:hover,
+.link-icon:focus {
+  fill: rgba(251, 251, 251, 0.8);
+  ;
+}
+
+.footer-title {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fbfbfb;
+  max-width: 265px;
+  margin-bottom: 82px;
+}
+
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-text {
+  color: rgba(251, 251, 251, 0.6);
+  font-size: 12px;
   text-align: center;
 }
-.footer-link {
-  position: relative;
+
+.footer-text:first-child {
+  margin-right: 20px;
 }
-.footer-link::before {
-  content: '';
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-12deg);
-  z-index: -1;
-  width: 110%;
-  height: 24%;
-  background-color: #41d1ff;
-  transition: 200ms ease;
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+
+  .footer-custom-container {
+    max-width: 768px;
+    min-height: 418px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+
+  .footer-container {
+    justify-content: space-between;
+    padding: 50px 48px 20px 48px;
+    min-height: 418px;
+    min-width: 736px;
+  }
+
+  .footer-menu-block,
+  .footer-text-block {
+    margin: 0;
+  }
+
+  .logo-footer {
+    font-size: 20px;
+  }
+
+  /*.footer-nav {
+		margin-bottom: 96px;
+	}*/
+
+  .item-list-link {
+    width: 91px;
+    font-size: 9px;
+  }
+
+  .social-links-list {
+    margin: 0;
+  }
+
+  .social-item {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-text-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-title {
+    font-size: 32px;
+    max-width: 628px;
+    margin: 0;
+  }
+
+  .footer-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    /*margin: 0 auto;*/
+  }
+
+  .footer-text:first-child {
+    margin-right: 32px;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1280px) {
+  .footer-custom-container {
+    max-width: 1280px;
+    padding: 0 25px;
+    /*margin: 0 25px;*/
+  }
+
+  .footer-container {
+    min-width: 1230px;
+  }
+
+  .footer-title {
+    font-size: 32px;
+    min-width: 650px;
+    /*margin: 0 auto 99px;*/
+  }
+
+  .footer-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    /*margin: 0 auto;*/
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer-custom-container {
+    max-width: 1440px;
+  }
+
+  .footer-container {
+    min-width: 1390px;
+  }
 }

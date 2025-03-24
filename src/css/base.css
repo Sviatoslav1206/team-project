@@ -23,10 +23,13 @@
 
 body {
   display: flex;
+  flex-wrap: wrap;
+  align-content: center;
   flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  background-color: #0e1823;
 }
 
 main {
@@ -35,4 +38,8 @@ main {
 
 main:has(.back-link) {
   text-align: center;
+}
+
+.hidden {
+  display: none;
 }
