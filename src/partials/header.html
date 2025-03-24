@@ -1,12 +1,51 @@
 <header class="header">
   <div class="container">
-    <nav class="header-nav">
-      <a href="" class="logo">yachtjet</a>
-      <button type="button" class="burger-button" id="open_menu">
-        <svg class="burger-icon" width="20" height="20">
-          <use id="burger-icon" href="/img/sprite.svg#icon-menu-icon"></use>
-        </svg>
-      </button>
+    <nav class="nav">
+      <!-- logo-->
+      <div class="nav-logo">
+        <a href="./index.html" aria-label="Site logo" class="logo"> YACHTJET </a>
+      </div>
+
+      <!-- Nav links -->
+      <div class="nav-center">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link active" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#yachts">Yachts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Reviews</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--icons -->
+      <div class="nav-right">
+        <a href="https://instagram.com" class="nav-icon" aria-label="Instagram">
+          <svg class="icon" width="20" height="20">
+            <use href="/img/sprite.svg#icon-instagram-icon"></use>
+          </svg>
+        </a>
+        <a href="https://facebook.com" class="nav-icon" aria-label="Facebook">
+          <svg class="icon" width="20" height="20">
+            <use href="/img/sprite.svg#icon-facebook-icon"></use>
+          </svg>
+        </a>
+        <a href="https://youtube.com" class="nav-icon" aria-label="YouTube">
+          <svg class="icon" width="20" height="20">
+            <use href="/img/sprite.svg#icon-youtube-icon"></use>
+          </svg>
+        </a>
+      </div>
     </nav>
   </div>
+
+  <!-- Burger Menu for Mobile -->
+  <button type="button" class="burger-button" id="open_menu">
+    <svg class="burger-icon" width="28" height="28">
+      <use id="burger-icon" href="/img/sprite.svg#icon-menu-icon"></use>
+    </svg>
+  </button>
 </header>
