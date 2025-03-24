@@ -16,7 +16,7 @@
       referrerpolicy="no-referrer"
     />
     <script type="module" crossorigin src="/team-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/team-project/assets/index-GMKhRPeO.css">
+    <link rel="stylesheet" crossorigin href="/team-project/assets/index-B861p9O1.css">
   </head>
   <body>
     <header class="header">
@@ -81,7 +81,36 @@
       
       
 
-      
+      <section class="section-rent" id="rent-a-jacht">
+    <div class="container rent-container">
+        <div class="rent-text-container">
+            <h2 class="rent-title">Rent a yacht now</h2>
+            <form class="rent-form">
+                <div class="rent-form-cont">
+                    <input class="rent-form-input" type="text" name="user-name" placeholder="Full Name" required>
+                    <input class="rent-form-input" type="email" name="user-email" placeholder="Email" required
+                        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
+                    <input class="rent-form-input" type="tel" name="user-phone" placeholder="Phone number" required
+                        pattern="^\+\d{2}-\d{3}-\d{3}-\d{2}-\d{2}$">
+                    <textarea class="rent-form-textarea" name="user-comment" placeholder="Comment"></textarea>
+                </div>
+                <button class="rent-button" type="submit">Send</button>
+            </form>
+
+        </div>
+        <div>
+            <picture>
+                <source srcset="./src/img/rent-desktop1440.jpg 1x, /team-project/assets/rent-desktop1440@2x-Dhj2Vd1v.jpg 2x"
+                    media="(min-width: 1440px)">
+                <source srcset="./src/img/rent-desktop1280.jpg 1x, /team-project/assets/rent-desktop1280@2x-DMg-_PL5.jpg 2x"
+                    media="(min-width: 1280px)">
+                <source srcset="./src/img/rent-tablet.jpg 1x, /team-project/assets/rent-tablet@2x-CJkFyvgl.jpg 2x" media="(min-width: 768px)">
+                <source srcset="./src/img/rent-mobile.jpg 1x, /team-project/assets/rent-mobile@2x-0G4tcgX2.jpg 2x" media="(max-width: 767px)">
+                <img class="rent-img" src="./src/img/rent-mobile" alt="yacht">
+            </picture>
+        </div>
+    </div>
+</section>
       
     </main>
 
