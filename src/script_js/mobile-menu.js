@@ -5,6 +5,7 @@ var myModalMenu = document.getElementById("modal_menu");
 
 var bodyElement = document.body;
 
+
 function toggleClass(objForm) {
 	return function () {
 		objForm.classList.toggle("is-open");
@@ -20,3 +21,17 @@ function toggleClass(objForm) {
 }
 
 btnOpenMenu.addEventListener("click", toggleClass(myModalMenu));
+
+function changeThemeStyle() {
+	document.body.classList.toggle("light_theme");
+	let img_field = document.getElementById("icon-switch");
+	if (document.body.classList.contains("light_theme")) {
+		img_field.setAttribute("href", "/img/sprite.svg#icon-facebook-icon");
+		//img_field.setAttribute("fill", "--var(text-color)");
+	} else {
+		img_field.setAttribute("href", "/img/sprite.svg#icon-moon");
+		//img_field.setAttribute("alt", "Dark theme");
+	}
+}
+
+document.getElementById("theme-switch").addEventListener("click", () => changeThemeStyle());

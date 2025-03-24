@@ -10,8 +10,7 @@
   --text-color: #040306;
   --secondary-color: #1b414b;
   --white-color: #fbfbfb;
-
-  color: #242424;
+  /*color: #242424;*/
   background-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
@@ -19,6 +18,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.light_theme {
+  --main-color: #2d4f74;
+  --text-color: #626263;
+  --secondary-color: #3f9cb6;
+  --white-color: #0e1823;
 }
 
 body {
@@ -29,7 +35,8 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
-  background-color: #0e1823;
+  background-color: var(--main-color);
+  transition: background-color 0.8s ease;
 }
 
 /* ця фігня працює лише до 1440 */
