@@ -77,7 +77,6 @@
     width: 100%;
     background-size: cover;
     border-radius: 0 24px 0 0;
-
 }
 
 .img-main {
@@ -88,8 +87,6 @@
 @media screen and (min-width: 768px) {
     .about-us {
         max-width: 704px;
-
-
     }
 
     .about-us-text-cont {
@@ -106,8 +103,6 @@
         max-width: 536px;
         width: 100%;
         margin-bottom: 50px;
-
-
     }
 
     .about-us-list {
@@ -180,8 +175,6 @@
         max-width: 324px;
     }
 
-    .about-us-second-text {}
-
 
     .about-us-img {
         padding: 0;
@@ -207,13 +200,11 @@
     }
 
 
-    .about-us-list {}
 
     .about-us-items {
         max-width: 376px;
     }
 
-    .about-us-second-text {}
 
     .about-us-img {
         padding: 0;
