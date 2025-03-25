@@ -61,7 +61,12 @@
     padding: 0;
     width: 100%;
    background-size: cover;
+   border-radius: 0 24px 0 0;
 
+}
+.img-main{
+    border-radius: 24px;
+    
 }
 @media screen and (min-width: 768px) {
     .about-us {
@@ -99,16 +104,17 @@
         font-size: 23px;
         max-width: 356px;
         width: 100%;
+     }
 
-        
-        
-    }
+
     .about-us-second-text {
         font-size: 13px;
         line-height: 1.15;
         max-width: 356px;
         width: 100%;
     }
+
+
     .about-us-img{
         padding: 0;
         max-width: 704px;
@@ -116,14 +122,14 @@
        background-size: cover;
     
     }
-
-    }
+}
+    
     @media screen and (min-width: 1280px) {
     
         .about-us {
             max-width: 1180px;
-            
-        }
+            }
+
         .about-us-text-cont{
             display: flex;
             justify-content: space-between;
@@ -150,10 +156,9 @@
             max-width: 324px;
         } 
 
-        .about-us-second-text {
-          
+        .about-us-second-text {}
         
-        }
+        
         .about-us-img{
             padding: 0;
             max-width: 1180px;
@@ -162,6 +167,7 @@
         
         }
     }
+
     @media screen and (min-width: 1440px) {
         .about-us {
             max-width: 1340px;
@@ -172,19 +178,13 @@
         }
         .about-us-title {
             max-width: 536px;
+             }
             
             
-        }
-             .about-us-list {
-            
-            
-            
-        }
+             .about-us-list {}
         .about-us-items {
             max-width: 376px;
-            
-            
-        }
+              }
         
         .about-us-second-text {
         
