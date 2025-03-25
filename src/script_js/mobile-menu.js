@@ -5,6 +5,10 @@ var myModalMenu = document.getElementById("modal_menu");
 
 var bodyElement = document.body;
 
+//для грьобаної кнопки!!
+
+var currentHref = myBurgerIcon.getAttribute("href");
+var basePath = currentHref.split("#")[0];
 
 function toggleClass(objForm) {
 	return function () {
@@ -12,26 +16,22 @@ function toggleClass(objForm) {
 		bodyElement.classList.toggle("locked");
 
 		if (objForm.classList.contains("is-open")) {
-			myBurgerIcon.setAttribute("href", "/img/sprite.svg#icon-close-iscon");
+			myBurgerIcon.setAttribute("href", basePath + "#icon-close-iscon");
 		} else {
-			myBurgerIcon.setAttribute("href", "/img/sprite.svg#icon-menu-icon");
+			myBurgerIcon.setAttribute("href", basePath + "#icon-menu-icon");
 		}
 
 	};
 }
 
+var menuLinks = document.querySelectorAll(".mobile-menu-nav-list-item-link, .menu-social-link");
+
+menuLinks.forEach(link => {
+	link.addEventListener("click", function () {
+		myModalMenu.classList.remove("is-open");
+		bodyElement.classList.remove("locked");
+		myBurgerIcon.setAttribute("href", basePath + "#icon-menu-icon");
+	});
+});
+
 btnOpenMenu.addEventListener("click", toggleClass(myModalMenu));
-
-function changeThemeStyle() {
-	document.body.classList.toggle("light_theme");
-	let img_field = document.getElementById("icon-switch");
-	if (document.body.classList.contains("light_theme")) {
-		img_field.setAttribute("href", "/img/sprite.svg#icon-facebook-icon");
-		//img_field.setAttribute("fill", "--var(text-color)");
-	} else {
-		img_field.setAttribute("href", "/img/sprite.svg#icon-moon");
-		//img_field.setAttribute("alt", "Dark theme");
-	}
-}
-
-document.getElementById("theme-switch").addEventListener("click", () => changeThemeStyle());
