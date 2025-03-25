@@ -22,10 +22,10 @@
 }
 
 body {
-  /*display: flex;
+  display: flex;
   flex-wrap: wrap;
   align-content: center;
-  flex-direction: column;*/
+  flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
