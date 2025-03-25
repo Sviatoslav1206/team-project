@@ -6,20 +6,21 @@
     align-items: center;
     margin: 0 auto;
     margin-bottom: 80px;
-    
-    
-    
+
+
+
 
 }
-.about-us-text-cont{
+
+.about-us-text-cont {
     padding-top: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
     padding-bottom: 0;
 }
 
-@media screen  and (min-width:350px) {
-.about-us-text-cont {
+@media screen and (min-width:350px) {
+    .about-us-text-cont {
         padding-top: 40px;
         padding-left: 20px;
         padding-right: 20px;
@@ -36,15 +37,18 @@
     color: #1b414b;
     width: 270px;
     margin-bottom: 40px;
-    
+
 }
+
 .about-us-list {
     margin-bottom: 40px;
-    
+
 }
+
 .about-us-items {
-    width: 270px;  
+    width: 270px;
 }
+
 .about-us-first-text {
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -53,9 +57,10 @@
     letter-spacing: -0.02em;
     color: #1b414b;
     padding-bottom: 20px;
-    
-    
+
+
 }
+
 .about-us-second-text {
     font-family: "Inter", sans-serif;
     font-weight: 400;
@@ -64,56 +69,63 @@
     letter-spacing: -0.02em;
     color: #040306;
     opacity: 0.4;
-   
-}
-.about-us-img{
-    padding: 0;
-    width: 100%;
-   background-size: cover;
-   border-radius: 0 24px 0 0;
 
 }
-.img-main{
-    border-radius: 24px;
-    
+
+.about-us-img {
+    padding: 0;
+    width: 100%;
+    background-size: cover;
+    border-radius: 0 24px 0 0;
+
 }
+
+.img-main {
+    border-radius: 24px;
+
+}
+
 @media screen and (min-width: 768px) {
     .about-us {
         max-width: 704px;
 
-        
+
     }
+
     .about-us-text-cont {
         padding-top: 50px;
         padding-left: 32px;
         padding-right: 32px;
         padding-bottom: 0;
     }
+
     .about-us-title {
-        
+
         font-weight: 500;
         font-size: 48px;
         max-width: 536px;
         width: 100%;
         margin-bottom: 50px;
 
-        
+
     }
+
     .about-us-list {
         margin-bottom: 49px;
-        
+
     }
+
     .about-us-items {
-        
+
         width: 389px;
-        
+
     }
 
     .about-us-first-text {
         font-size: 23px;
         max-width: 356px;
         width: 100%;
-     }
+    }
 
 
     .about-us-second-text {
@@ -124,85 +136,90 @@
     }
 
 
-    .about-us-img{
+    .about-us-img {
         padding: 0;
         max-width: 704px;
         width: 100%;
-       background-size: cover;
-    
+        background-size: cover;
+
     }
 }
-    
-    @media screen and (min-width: 1280px) {
-    
-        .about-us {
-            max-width: 1180px;
-            }
 
-        .about-us-text-cont{
-            display: flex;
-            justify-content: space-between;
-            padding-top: 50px;
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-bottom: 0;
-            margin-bottom: 100px;
-            
-        }
-        .about-us-title {
-            max-width: 536px;
-            margin: 0 auto;
+@media screen and (min-width: 1280px) {
 
-            
-            
-        }
-             .about-us-list {
-            
-            margin-bottom: 49px;
-            
-        }
-        .about-us-items {
-            max-width: 324px;
-        } 
-
-        .about-us-second-text {}
-        
-        
-        .about-us-img{
-            padding: 0;
-            max-width: 1180px;
-            width: 100%;
-           background-size: cover;
-        
-        }
+    .about-us {
+        max-width: 1180px;
     }
 
-    @media screen and (min-width: 1440px) {
-        .about-us {
-            max-width: 1340px;
-            
-        }
-        .about-us-text-cont{
-           gap: 299px;
-        }
-        .about-us-title {
-            max-width: 536px;
-             }
-            
-            
-             .about-us-list {}
-        .about-us-items {
-            max-width: 376px;
-              }
-        
-        .about-us-second-text {
-        
-        }
-        .about-us-img{
-            padding: 0;
-            max-width: 1340px;
-            width: 100%;
-           background-size: cover;
-        
-        }
+    .about-us-text-cont {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 0;
+        margin-bottom: 100px;
+
     }
+
+    .about-us-title {
+        max-width: 536px;
+        margin: 0 auto;
+
+
+
+    }
+
+    .about-us-list {
+
+        margin-bottom: 49px;
+
+    }
+
+    .about-us-items {
+        max-width: 324px;
+    }
+
+    .about-us-second-text {}
+
+
+    .about-us-img {
+        padding: 0;
+        max-width: 1180px;
+        width: 100%;
+        background-size: cover;
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .about-us {
+        max-width: 1340px;
+
+    }
+
+    .about-us-text-cont {
+        gap: 299px;
+    }
+
+    .about-us-title {
+        max-width: 536px;
+    }
+
+
+    .about-us-list {}
+
+    .about-us-items {
+        max-width: 376px;
+    }
+
+    .about-us-second-text {}
+
+    .about-us-img {
+        padding: 0;
+        max-width: 1340px;
+        width: 100%;
+        background-size: cover;
+
+    }
+}
