@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  margin-top: 80px;
+  /*padding-bottom: 80px;*/
   gap: 80px;
 }
 
@@ -24,6 +24,9 @@
 
   .rent-container {
     gap: 100px;
+    justify-content: start;
+    margin-top: 150px;
+    margin-bottom: 150px;
   }
 }
 
@@ -37,8 +40,6 @@
     display: flex;
     align-items: normal;
     flex-direction: row-reverse;
-    margin-top: 150px;
-    margin-bottom: 150px;
     gap: 50px;
   }
 }
@@ -49,7 +50,7 @@
   line-height: 1;
   letter-spacing: -0.02em;
   color: #fbfbfb;
-  padding-top: 80px;
+  /*padding-top: 80px;*/
   margin-bottom: 40px;
   text-align: left;
 }
@@ -149,6 +150,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
   .rent-form-input::placeholder,
   .rent-form-textarea::placeholder {
     font-size: 14px;
