@@ -19,4 +19,14 @@ function toggleClass(objForm) {
 	};
 }
 
+var menuLinks = document.querySelectorAll(".mobile-menu-nav-list-item-link, .menu-social-link");
+
+menuLinks.forEach(link => {
+	link.addEventListener("click", function () {
+		myModalMenu.classList.remove("is-open");
+		bodyElement.classList.remove("locked");
+		myBurgerIcon.setAttribute("href", "/img/sprite.svg#icon-menu-icon");
+	});
+});
+
 btnOpenMenu.addEventListener("click", toggleClass(myModalMenu));
