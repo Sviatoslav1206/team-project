@@ -14,6 +14,8 @@
   height: 42px;
   background-color: #FBFBFB;
   padding: 0 20px;
+  position: relative;
+  z-index: 1;
 }
 
 /* nav */
@@ -177,7 +179,8 @@
   cursor: pointer;
   padding: 10px;
   position: absolute;
-  right: 40px;
+  z-index: 5;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
 }
